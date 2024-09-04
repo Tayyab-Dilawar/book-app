@@ -1,0 +1,95 @@
+$secondary-color: #2ecc71;
+.book-list {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  .search-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 10px;
+
+    input {
+      margin-right: 10px;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &:hover {
+        background-color: #f9f9f9;
+      }
+
+      .book-info {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        .book-title,
+        .book-author,
+        .book-genre,
+        .book-date {
+          margin-bottom: 5px;
+          font-size: 0.9rem;
+        }
+
+        .book-title {
+          font-weight: bold;
+        }
+
+        .book-author,
+        .book-genre {
+          color: #555;
+        }
+
+        .book-date {
+          color: #777;
+        }
+      }
+
+      .icons {
+        display: flex;
+
+        .edit-icon {
+          color: #3498db;
+          margin-right: 10px;
+        }
+
+        .delete-icon {
+          color: #e74c3c;
+        }
+
+        .MuiIconButton-root {
+          padding: 8px;
+
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+          }
+        }
+      }
+    }
+  }
+}

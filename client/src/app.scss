@@ -1,0 +1,25 @@
+$primary-color: #3498db;
+
+.app {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    a {
+      padding: 10px 15px;
+      border-radius: 4px;
+      background-color: $primary-color;
+      color: #fff;
+      font-weight: bold;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+}
